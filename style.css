@@ -137,7 +137,7 @@ h1 {
 
 .skills {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: #feffff8f;
     border: 1px solid black;
@@ -202,6 +202,10 @@ h1 {
 .contact-me {
     margin-top: 7px;
     border-top: 2px solid#0F4C75;
+        background-color: #0F4C75;
+    background-image: linear-gradient(#1e608b, #BBE1FA);
+    text-align:center;
+    padding-bottom:50px;
 }
 
 .contact-me-container {
@@ -209,13 +213,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 230px;
-    background-color: #0F4C75;
-    background-image: linear-gradient(#1e608b, #BBE1FA);
+    height: 135px;
+
     gap: 20px;
 
 }
-
+   
 .contact-me-container>* {
     flex-basis: 240px;
     border-bottom: 1px solid #0F4C75;
@@ -247,6 +250,13 @@ a:-webkit-any-link {
     margin-right: 15px;
 }
 
+.contact-me h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom:0px;
+}
 
 @media(max-width:623px) {
 
@@ -359,4 +369,44 @@ a:-webkit-any-link {
         grid-template-columns: 120px 295px;
     }
 
+}
+
+
+@media(max-width:500px){
+    h1{
+        font-size: 52px;
+    height: 59px;
+    }
+
+    .hero-container>p{
+        font-size:15px;
+    }
+
+    .profile-img {
+    width: 180px;
+    height: 180px;
+}
+
+.intro-para{
+        font-size: 12px;
+        width:280px;
+}
+
+
+.skills{
+    padding-left:160px;
+    padding-right:160px;
+}
+
+.skills-container{
+    grid-template-rows: 1fr 121px 176px 134px;
+    grid-template-columns: 100px 170px;
+    padding-right:17px;
+    padding-top:13px;
+    padding-bottom:16px;
+}
+
+.skills-container > img {
+    padding-left:10px;
+}
 }
