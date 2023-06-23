@@ -1,0 +1,377 @@
+/* Hero Section */
+
+.bg-img1 {
+    background: url(./images/mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+}
+
+.bg-img2 {
+    background: url(./images/pencils.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 986.19px;
+    width: 100%;
+    padding-bottom: 93px;
+}
+
+#hero {
+    background-color: #1b262cb2;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    color: white;
+    text-align: center;
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.45);
+    padding: 35px;
+    cursor: pointer;
+}
+
+.hero-container:hover {
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+    height: 110px;
+    font-weight: 500;
+    font-size: 100px;
+    margin: 0px;
+}
+
+.hero-container>p {
+    font-family: 'Tangerine', cursive;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 19px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+/* About Me Section */
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBE1FA;
+    margin-top: 7px;
+
+}
+
+.about-me-container {
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-columns: 400px 200px 1fr;
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 200px;
+
+}
+
+.about-me-container>h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /* height:60px; */
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.45);
+}
+
+
+.profileimg {
+    order: 1;
+    grid-area: 1/3/4/4;
+    padding-left: 140px;
+    padding-top: 18px;
+    cursor: pointer;
+
+}
+
+.profile-img:hover {
+    width: 350px;
+    height: 350px;
+
+}
+
+.intro-para {
+    font-family: 'Albert Sans', sans-serif;
+    grid-area: 2/1/4/3;
+    font-size: 18px;
+    border: 1px solid #1b262c;
+    border-right: none;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+.uni-name {
+    color: #1b262c;
+    font-weight: 600;
+}
+
+
+
+
+@media(max-width:623px) {
+
+    h1 {
+        font-size: 60px;
+        height: 75px;
+    }
+
+    #hero {
+        height: 400px;
+    }
+
+    .bg-img1 {
+        height: 400px;
+    }
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 180px;
+    }
+
+    .intro-para {
+        order: 1;
+        margin-top: 60px;
+        width: 480px;
+        border: 1px solid #1b262c;
+        font-size: 13px;
+
+    }
+
+    .profileimg {
+        order: 0;
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-me-container>h2 {
+        font-size: 45px;
+    }
+
+}
+
+
+
+
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #feffff8f;
+    border: 1px solid black;
+    margin-top: 7px;
+    padding-top: 120px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 382px;
+
+}
+
+.skills-container {
+    display: grid;
+    grid-template-rows: 1fr 105px 105px 125px;
+    grid-template-columns: 130px 500px;
+    padding-left: 33px;
+    padding-right: 360px;
+    margin-top: 55px;
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.45);
+
+}
+
+.skills-container>h2 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    grid-area: 1/1/2/3;
+}
+
+/* .c-logo{
+    /* height:50px;     
+} */
+
+.programming {
+    grid-area: 2/2/3/3;
+
+}
+
+/* .web-logo{
+     height:50px;  
+} */
+
+.web-development {
+    grid-area: 3/2/4/3;
+}
+
+/* .communication-logo{
+     height:50px;  
+} */
+
+.skills-container>p {
+    font-size: 22px;
+    font-family: 'Albert Sans', sans-serif;
+    margin-top: 11px;
+    font-weight: 200;
+}
+
+
+.skills-container img {
+    height: 50px;
+    padding-left: 45px;
+}
+
+.skills-container img:hover {
+    height: 60px;
+}
+
+.contact-me {
+    margin-top: 7px;
+    border-top: 2px solid#0F4C75;
+}
+
+.contact-me-container {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-color: #0F4C75;
+    background-image: linear-gradient(#1e608b, #BBE1FA);
+    gap: 20px;
+
+}
+
+.contact-me-container>* {
+    flex-basis: 240px;
+    border-bottom: 1px solid #0F4C75;
+    border-radius: 5px;
+    /* background-color:white; */
+}
+
+a:-webkit-any-link {
+    color: BLACK;
+    cursor: pointer;
+    text-decoration: none;
+    /* border:1px solid white; */
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 15px;
+    padding: 7px 0px;
+
+    text-align: center;
+}
+
+.contact-me p {
+    color: black;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 15px;
+    padding: 7px 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.contact-me-container img {
+    height: 25px;
+    margin-right: 15px;
+}
+
+
+
+
+@media(max-width:1140px) {
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-para {
+        order: 1;
+        margin-top: 60px;
+        width: 415px;
+        border: 1px solid #1b262c;
+
+    }
+
+    .profileimg {
+        order: 0;
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+
+    .contact-me-container {
+        flex-direction: column;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .contact-me-container>* {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+    }
+}
+
+
+@media(min-width:850px) and (max-width:1230px) {
+
+    .skills-container {
+        padding-right: 0px;
+        padding-left: 24px;
+
+    }
+}
+
+
+@media(max-width:850px) {
+
+    .skills {
+        padding-left: 40px;
+
+    }
+
+    .skills-container {
+        padding-right: 0px;
+        grid-template-rows: 1fr 115px 130px 128px;
+        grid-template-columns: 120px 295px;
+    }
+
+}
