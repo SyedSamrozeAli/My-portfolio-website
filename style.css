@@ -224,7 +224,10 @@ h1 {
     border-bottom: 1px solid #0F4C75;
     border-radius: 5px;
 }
-
+.contact-me-container>*:hover{
+    flex-basis: 270px;
+    border-bottom: 4px solid #0F4C75;
+}
 a:-webkit-any-link {
     color: BLACK;
     cursor: pointer;
@@ -374,7 +377,7 @@ a:-webkit-any-link {
 
 @media(max-width:500px){
     h1{
-        font-size: 52px;
+        font-size: 49px;
     height: 59px;
     }
 
@@ -387,26 +390,39 @@ a:-webkit-any-link {
     height: 180px;
 }
 
-.intro-para{
-        font-size: 12px;
-        width:280px;
-}
+    .intro-para{
+            font-size: 12px;
+            width:280px;
+    }
 
 
-.skills{
-    padding-left:160px;
-    padding-right:160px;
-}
+    .skills{
+        padding-left:160px;
+        padding-right:160px;
+    }
 
-.skills-container{
-    grid-template-rows: 1fr 121px 176px 134px;
-    grid-template-columns: 100px 170px;
-    padding-right:17px;
-    padding-top:13px;
-    padding-bottom:16px;
-}
+    .skills-container{
+        grid-template-rows: 1fr 121px 176px 134px;
+        grid-template-columns: 100px 170px;
+        padding-right:17px;
+        padding-top:13px;
+        padding-bottom:16px;
+    }
 
-.skills-container > img {
-    padding-left:10px;
-}
+    .skills-container > img {
+        padding-left:10px;
+        height:45px;
+    }
+
+    .skills-container h2 {
+        font-size:55px;
+    }
+
+    .skills-container p {
+        font-size: 20px;
+    }
+
+    .contact-me h2 {
+        font-size: 55px;
+    }
 }
