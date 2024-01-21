@@ -669,7 +669,7 @@ a:-webkit-any-link {
   .contact-me-container {
     flex-direction: column;
     padding-top: 70px;
-    padding-bottom: 80px;
+    padding-bottom: 200px;
   }
 
   .contact-me-container > * {
