@@ -1,0 +1,874 @@
+:root {
+  --back-color: rgba(0, 0, 0, 0.925);
+  --sec-color: #fd151b;
+}
+/* Hero Section */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.card {
+  width: 100%;
+}
+
+.bg-img1 {
+  background: url(./back4.png);
+  background-size: cover;
+  background-position: center;
+  height: 606px;
+  width: 100%;
+  /* position: relative; */
+}
+
+.nav-bar {
+  /* position: absolute; */
+  background-color: #0000001e;
+  display: flex;
+  justify-content: flex-end;
+  height: 56px;
+  font-family: "Tangerine", cursive;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+}
+
+.nav-bar > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding-right: 35px;
+  flex-basis: 490px;
+}
+
+.nav-bar li {
+  margin: 10px;
+  font-weight: 900;
+  font-size: 18px;
+  color: black;
+}
+
+.nav-bar li {
+  padding: 5px;
+}
+
+.nav-bar li:hover {
+  border-bottom: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 1px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: bold;
+}
+#hero {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+}
+
+.hero-container {
+  color: black;
+  text-align: center;
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.45);
+  padding: 35px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+
+.hero-container:hover {
+  background-color: rgba(0, 0, 0, 0.158);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  height: 110px;
+  font-weight: 500;
+  font-size: 100px;
+  margin: 0px;
+}
+
+h2 {
+  display: inline;
+  position: relative;
+}
+.hero-container > p {
+  font-family: "Tangerine", cursive;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 19px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+/* ----------------------- About Me Section -------------------------- */
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.925);
+  margin-top: 2px;
+  width: 100%;
+  /* flex-basis: 200px; */
+  /* position: relative; */
+}
+
+.about-me-container {
+  /* position: relative; */
+  display: grid;
+  grid-template-rows: 80px 1fr 1fr;
+  grid-template-columns: 400px 200px 1fr;
+  margin-top: 120px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 200px;
+}
+
+.about-me-container > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #fd151b;
+  height: 72px;
+  width: 168px;
+  /* height:60px; */
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.circle {
+  grid-area: 1/3/4/4;
+  width: 300px;
+  height: 225px;
+  border-radius: 50%;
+  background-color: #fd151b;
+  box-shadow: -1px 4px 70px 5px rgba(255, 0, 0, 0.842);
+  margin-left: 140px;
+  margin-top: 73px;
+}
+.profileimg {
+  order: 1;
+  grid-area: 1/3/4/4;
+  padding-left: 140px;
+  padding-top: 18px;
+  cursor: pointer;
+}
+
+/* .circle:hover + .profile-img {
+  width: 350px;
+  height: 350px;
+} */
+
+.circle:hover {
+  width: 330px;
+  height: 251px;
+  margin-top: 102px;
+  margin-left: 150px;
+}
+
+.intro-para {
+  font-family: "Albert Sans", sans-serif;
+  grid-area: 2/1/4/3;
+  font-size: 18px;
+  border: 1px solid #fd151b;
+  /* box-shadow: -41px 0px 61px -18px rgba(255, 0, 0, 0.144); */
+  box-shadow: -41px 25px 61px -18px rgba(255, 0, 0, 0.144);
+  color: white;
+  border-right: none;
+  border-top: none;
+  padding: 10px;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+.uni-name {
+  /* color: #1b262c; */
+  color: white;
+  font-weight: 600;
+}
+
+/* -------------------------------- Skill Section ------------------------------ */
+
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.925);
+  border: 1px solid black;
+  margin-top: 2px;
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 200px;
+}
+
+.s-content {
+  padding-left: 33px;
+  padding-right: 360px;
+  margin-top: 20px;
+  box-shadow: -1px 4px 28px 0px rgba(255, 0, 0, 0.637);
+  background-color: none;
+  margin-right: 70px;
+  border-radius: 20px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-rows: 1fr 82px 97px 148px;
+  grid-template-columns: 130px 500px;
+}
+.s-content > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  grid-area: 1/1/2/3;
+  color: #fd151b;
+  width: 190px;
+  height: 80px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #fd151b;
+  transition: all ease 1s;
+}
+
+h2:hover::after {
+  width: 100%;
+}
+
+.programming {
+  grid-area: 2/2/3/3;
+}
+
+.web-development {
+  grid-area: 3/2/4/3;
+}
+
+.s-content > p {
+  font-size: 22px;
+  font-family: "Albert Sans", sans-serif;
+  margin-top: 11px;
+  font-weight: 200;
+  color: white;
+}
+
+.skills-container img {
+  height: 50px;
+  padding-left: 45px;
+}
+
+.skills-container img:hover {
+  height: 60px;
+  cursor: pointer;
+}
+
+.skills-container img:hover + p {
+  font-size: 25px;
+  color: #fd151b;
+  cursor: pointer;
+}
+
+.skills-container p:hover {
+  font-weight: bold;
+  font-size: 25px;
+  color: #fd151b;
+  cursor: pointer;
+}
+
+.educ-container {
+  height: 450px;
+  padding-top: 55px;
+}
+.educ-container ul,
+.achievment-container ul {
+  padding-right: 55px;
+  margin-top: 25px;
+  list-style: none;
+  width: 630px;
+}
+
+.educ-container ul li::before,
+.achievment-container ul li::before {
+  content: "\2022";
+  color: red;
+  display: inline;
+  width: 1rem;
+  font-weight: bolder;
+  margin-right: 6px;
+  font-size: 22px;
+}
+.timeline {
+  color: #ff0008c4;
+  font-family: "Albert Sans", sans-serif;
+  margin-top: 5px;
+  display: block;
+  margin-left: 18px;
+}
+.institute-name {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 26px;
+}
+
+.institute-name:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.institute-name:hover + .timeline {
+  font-weight: bolder;
+  cursor: pointer;
+}
+.achievment-container {
+  height: 450px;
+  padding-top: 55px;
+}
+
+.achievment-container li {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Albert Sans", sans-serif;
+  margin-top: 11px;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.bold-text {
+  color: red;
+}
+.achievment-container button {
+  border-radius: 5px;
+  background-color: #fd151b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 10px;
+  width: max-content;
+  display: inline-block;
+}
+
+.achievment-container button:hover {
+  cursor: pointer;
+  box-shadow: -1px 4px 8px 0px rgba(255, 0, 0, 0.637);
+}
+
+/*--------------------- Projects Section ---------------------*/
+
+#project {
+  border: 1px solid black;
+  margin-top: 2px;
+  padding: 30px;
+  padding-bottom: 120px;
+  background-color: var(--back-color);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.project-heading {
+  color: #fd151b;
+  height: 110px;
+}
+.project-heading > h2 {
+  display: inline;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  height: 75px;
+  margin-left: 140px;
+  margin-top: 31px;
+  margin-bottom: 8px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 890px;
+  flex-basis: 350px;
+  margin-left: 0px;
+}
+
+.cards-container h3 {
+  color: #fd151b;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 100;
+}
+
+.description {
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 14px;
+}
+
+.project-tag {
+  display: inline;
+  font-family: "Albert Sans", sans-serif;
+  padding: 2.5px 6px;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid red;
+  background-color: #fd151b;
+  color: black;
+  border-radius: 5px;
+}
+
+.card1 {
+  border: 1px solid #fd151b;
+  border-radius: 4px;
+  margin-right: 25px;
+  padding: 15px;
+}
+
+.card2 {
+  border: 1px solid #fd151b;
+  margin-right: 25px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.card3 {
+  border: 1px solid #fd151b;
+  padding-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.cards-container button {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 3px 9px;
+  text-align: center;
+}
+
+.cards-container button:hover {
+  background-color: #fd151b;
+  cursor: pointer;
+  box-shadow: -1px 4px 8px 0px rgba(255, 0, 0, 0.637);
+}
+.card1:hover {
+  box-shadow: -1px 4px 28px 0px rgba(255, 0, 0, 0.637);
+  cursor: pointer;
+}
+
+.card2:hover {
+  box-shadow: -1px 4px 28px 0px rgba(255, 0, 0, 0.637);
+  cursor: pointer;
+}
+.card3:hover {
+  box-shadow: -1px 4px 28px 0px rgba(255, 0, 0, 0.637);
+  cursor: pointer;
+}
+
+#project a button {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+#project a button:hover {
+  background-color: #fd151b;
+  cursor: pointer;
+  box-shadow: -1px 4px 8px 0px rgba(255, 0, 0, 0.637);
+}
+
+.for-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------------------- Contact-Me Section ---------------------------- */
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  border-top: 2px solid #fd151b;
+  background-image: linear-gradient(#fd151b, rgba(0, 0, 0, 0.966));
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 35px;
+}
+
+.contact-me-container {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+  width: 100%;
+  gap: 20px;
+}
+
+.contact-me-container > * {
+  flex-basis: 240px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.contact-me-container > *:hover {
+  flex-basis: 270px;
+  border-bottom: 4px solid black;
+}
+a:-webkit-any-link {
+  color: BLACK;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 15px;
+  padding: 7px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#contact-me p {
+  color: black;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 15px;
+  padding: 7px 0px;
+  cursor: pointer;
+  /* text-align: center; */
+  font-weight: bold;
+  display: inline;
+  margin: 0px;
+}
+
+.contact-me-container img {
+  height: 25px;
+  margin-right: 15px;
+}
+
+#contact-me h2 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+#contact-me h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  transition: all ease 1s;
+}
+
+#contact-me h2:hover::after {
+  width: 0%;
+}
+
+#contact-me > a button {
+  display: block;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 0px;
+}
+
+#contact-me > a button:hover {
+  cursor: pointer;
+  box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.637);
+  width: 150px;
+  height: 30px;
+  font-size: 13px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box img {
+  display: inline;
+}
+
+@media (max-width: 1140px) {
+  #about-me {
+    height: 100%;
+  }
+  .about-me-container {
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-columns: 600px 0px 0px;
+  }
+
+  .about-me-container h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .circle {
+    grid-area: 2/1/3/1;
+  }
+
+  .intro-para {
+    grid-area: 3/1/4/1;
+    order: 1;
+    margin-top: 60px;
+    width: 415px;
+    margin-left: 73px;
+    border: 1px solid #fd151b;
+    box-shadow: -11px 25px 94px 13px rgba(255, 0, 0, 0.144);
+  }
+
+  .profileimg {
+    order: 0;
+    padding-left: 0px;
+    grid-area: 2/1/3/1;
+    margin-left: 139px;
+    padding-top: 18px;
+  }
+
+  .skills-container {
+    grid-template-columns: 130px 347px;
+  }
+  .contact-me-container {
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .contact-me-container > * {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .box {
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1110px) {
+  .skills-container {
+    grid-template-rows: 1fr 82px 97px 246px;
+  }
+  .educ-container {
+    height: 550px;
+  }
+
+  .achievment-container {
+    height: 550px;
+  }
+
+  .achievment-container ul {
+    width: 425px;
+    font-size: 20px;
+  }
+
+  .award-btn {
+    margin-left: 53px;
+  }
+}
+
+@media (max-width: 950px) {
+  .cards-container {
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+  }
+
+  .card1 {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .card2 {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .card3 {
+    width: 100%;
+  }
+
+  .for-center > a button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 910px) {
+  .skills-container {
+    grid-template-rows: 1fr 82px 125px 320px;
+    grid-template-columns: 114px 212px;
+  }
+
+  .educ-container {
+    height: 650px;
+  }
+
+  .educ-container ul {
+    width: 530px;
+  }
+
+  .institute-name {
+    width: 170px;
+    font-size: 20px;
+  }
+
+  .achievment-container {
+    height: 650px;
+  }
+
+  .achievment-container ul {
+    width: 300px;
+    font-size: 20px;
+  }
+
+  .award-btn {
+    margin-left: 53px;
+  }
+  .project-heading {
+    text-align: center;
+  }
+  .project-heading h2 {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 623px) {
+  h1 {
+    font-size: 60px;
+    height: 75px;
+  }
+
+  #hero {
+    height: 500px;
+  }
+
+  .bg-img1 {
+    height: 500px;
+  }
+  h2:hover::after {
+    width: 0%;
+  }
+
+  .ab .project-heading {
+    text-align: center;
+  }
+  .project-heading h2 {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 49px;
+    height: 59px;
+  }
+
+  .hero-container > p {
+    font-size: 15px;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profileimg {
+    margin-left: 205px;
+  }
+
+  .circle {
+    width: 166px;
+    height: 128px;
+    margin-left: 212px;
+    margin-top: 65px;
+  }
+  .intro-para {
+    font-size: 12px;
+    width: 280px;
+    margin-left: 144px;
+    margin-top: 40px;
+  }
+
+  .contact-me h2 {
+    font-size: 55px;
+  }
+
+  h2:hover::after {
+    width: 0%;
+  }
+
+  .card {
+    width: 10px;
+  }
+}
+
+@media (max-width: 463px) {
+  .cards-container {
+    width: 250px;
+  }
+}
+@media (max-width: 380px) {
+  h1 {
+    font-size: 36px;
+    height: 41px;
+  }
+
+  #hero {
+    height: 400px;
+  }
+
+  .hero-container > p {
+    font-size: 12px;
+  }
+  .bg-img1 {
+    height: 100%;
+  }
+
+  .intro-para {
+    font-size: 10px;
+    width: 250px;
+    margin-left: 160px;
+  }
+
+  .for-center > a button {
+    width: max-content;
+  }
+}
