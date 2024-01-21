@@ -18,9 +18,11 @@ html {
   background-position: center;
   height: 606px;
   width: 100%;
+  /* position: relative; */
 }
 
 .nav-bar {
+  /* position: absolute; */
   background-color: #0000001e;
   display: flex;
   justify-content: flex-end;
@@ -68,6 +70,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* position: absolute; */
 }
 
 .hero-container {
@@ -113,9 +116,13 @@ h2 {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.925);
   margin-top: 2px;
+  width: 100%;
+  /* flex-basis: 200px; */
+  /* position: relative; */
 }
 
 .about-me-container {
+  /* position: relative; */
   display: grid;
   grid-template-rows: 80px 1fr 1fr;
   grid-template-columns: 400px 200px 1fr;
@@ -365,6 +372,8 @@ h2:hover::after {
   text-align: center;
   margin-left: 5px;
   margin-top: 10px;
+  width: max-content;
+  display: inline-block;
 }
 
 .achievment-container button:hover {
@@ -619,24 +628,6 @@ a:-webkit-any-link {
   display: inline;
 }
 
-@media (max-width: 623px) {
-  h1 {
-    font-size: 60px;
-    height: 75px;
-  }
-
-  #hero {
-    height: 500px;
-  }
-
-  .bg-img1 {
-    height: 500px;
-  }
-  h2:hover::after {
-    width: 0%;
-  }
-}
-
 @media (max-width: 1140px) {
   #about-me {
     height: 100%;
@@ -672,6 +663,9 @@ a:-webkit-any-link {
     padding-top: 18px;
   }
 
+  .skills-container {
+    grid-template-columns: 130px 347px;
+  }
   .contact-me-container {
     flex-direction: column;
     padding-top: 70px;
@@ -683,6 +677,121 @@ a:-webkit-any-link {
     padding-bottom: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
+  }
+
+  .box {
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1110px) {
+  .skills-container {
+    grid-template-rows: 1fr 82px 97px 246px;
+  }
+  .educ-container {
+    height: 550px;
+  }
+
+  .achievment-container {
+    height: 550px;
+  }
+
+  .achievment-container ul {
+    width: 425px;
+    font-size: 20px;
+  }
+
+  .award-btn {
+    margin-left: 53px;
+  }
+}
+
+@media (max-width: 950px) {
+  .cards-container {
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+  }
+
+  .card1 {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .card2 {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .card3 {
+    width: 100%;
+  }
+
+  .for-center > a button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 910px) {
+  .skills-container {
+    grid-template-rows: 1fr 82px 125px 320px;
+    grid-template-columns: 114px 212px;
+  }
+
+  .educ-container {
+    height: 650px;
+  }
+
+  .educ-container ul {
+    width: 530px;
+  }
+
+  .institute-name {
+    width: 170px;
+    font-size: 20px;
+  }
+
+  .achievment-container {
+    height: 650px;
+  }
+
+  .achievment-container ul {
+    width: 300px;
+    font-size: 20px;
+  }
+
+  .award-btn {
+    margin-left: 53px;
+  }
+  .project-heading {
+    text-align: center;
+  }
+  .project-heading h2 {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 623px) {
+  h1 {
+    font-size: 60px;
+    height: 75px;
+  }
+
+  #hero {
+    height: 500px;
+  }
+
+  .bg-img1 {
+    height: 500px;
+  }
+  h2:hover::after {
+    width: 0%;
+  }
+
+  .ab .project-heading {
+    text-align: center;
+  }
+  .project-heading h2 {
+    margin-left: 0px;
   }
 }
 
@@ -725,8 +834,17 @@ a:-webkit-any-link {
   h2:hover::after {
     width: 0%;
   }
+
+  .card {
+    width: 10px;
+  }
 }
 
+@media (max-width: 463px) {
+  .cards-container {
+    width: 250px;
+  }
+}
 @media (max-width: 380px) {
   h1 {
     font-size: 36px;
@@ -748,5 +866,9 @@ a:-webkit-any-link {
     font-size: 10px;
     width: 250px;
     margin-left: 160px;
+  }
+
+  .for-center > a button {
+    width: max-content;
   }
 }
