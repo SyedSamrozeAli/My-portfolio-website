@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,200;1,300;1,400;1,500&family=Teko&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css "
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="bg-img1">
+      <nav class="nav-bar">
+        <!-- <img class="openbar" src="./openbar.png" alt="opnebar" height="25" />
+        <img class="closebar" src="./close.png" alt="closebar" height="25" /> -->
+        <ul>
+          <a href="#hero"><li>Home</li></a>
+          <a href="#about-me"><li>About me</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#project"><li>Projects</li></a>
+          <a href="#contact-me"><li>Contact me</li></a>
+        </ul>
+      </nav>
+      <section id="hero">
+        <div class="hero-container">
+          <h1>SYED SAMROZE ALI</h1>
+          <p>- Computer Science Student -</p>
+        </div>
+      </section>
+    </div>
+
+    <section id="about-me">
+      <div class="about-me-container">
+        <h2>ABOUT ME</h2>
+        <div class="circle"></div>
+        <div class="profileimg">
+          <img src="./profile.png" alt="my photo" class="profile-img" />
+        </div>
+        <div class="intro-para">
+          <p>
+            Welcome to my portfolio website! I'm thrilled to have you here. My
+            name is Syed Samroze Ali , and I am a BS(CS) Student currently
+            studying in <span class="uni-name">FAST University</span> Karachi.
+            Through this platform, I invite you to explore my creative journey,
+            showcasing a diverse range of projects, accomplishments, and
+            experiences. Whether you're a potential client, collaborator, or
+            simply an enthusiast of my work, I hope that this portfolio provides
+            you with a comprehensive understanding of my skills, expertise,and
+            dedication
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="skills" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="skills-container s-content">
+            <h2>SKILL SETS</h2>
+            <img
+              class="c-logo"
+              height="25"
+              src="https://img.icons8.com/fluency/48/c-plus-plus-logo.png"
+              alt="c-plus-plus-logo"
+            />
+            <p class="programming">C/C++ Programmer</p>
+            <img
+              class="web-logo"
+              height="25"
+              src="https://img.icons8.com/fluency/48/source-code.png"
+              alt="source-code"
+            />
+            <p class="web-development">
+              Currently doing Web-development course from UDEMY
+            </p>
+            <img
+              class="communication-logo"
+              height="25"
+              src="./algorithm.png"
+              alt="group-task"
+            />
+            <p class="communication">Data Structures and Algorithm</p>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="educ-container s-content">
+            <h2>EDUCATION</h2>
+            <ul>
+              <li>
+                <p class="institute-name">FAST University</p>
+                <p class="timeline">(2022-2026)</p>
+              </li>
+              <li>
+                <p class="institute-name">Government Dehli Science College</p>
+                <p class="timeline">(2020-2022)</p>
+              </li>
+              <li>
+                <p class="institute-name">Hamdard Public School</p>
+                <p class="timeline">(2010-2020)</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="achievment-container s-content">
+            <h2>ACHIEVMENTS</h2>
+            <ul>
+              <li>
+                Achieved <span class="bold-text">3.98 SGPA</span> in 3rd
+                Semester and currently have a
+                <span class="bold-text">3.86 CGPA</span>
+              </li>
+              <li>
+                Got <span class="bold-text">95%</span> in HSC PART-I and 93% in
+                HSC PART-II
+              </li>
+              <li>
+                Amongst <span class="bold-text">Top 20</span> Position holder in
+                Intermediate Board Karachi
+              </li>
+              <li>
+                Won the FAST Developer's Day
+                <span class="bold-text">Speed Debugging</span> Competion
+              </li>
+              <li>
+                Achieved <span class="bold-text">1st Position</span> from
+                Grade-I to Matric at Hamadard Public School
+              </li>
+              <li>
+                Achieved <span class="bold-text">86%</span> in Matric Board
+                Karachi
+              </li>
+            </ul>
+
+            <a href="./Certificates.pdf"
+              ><button style="margin-left: 60px">View Certificates</button></a
+            >
+            <a class="award-btn" href="./Academic Achievements.pdf"
+              ><button>View Awards</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <section id="project">
+      <div class="project-heading"><h2>PROJECTS</h2></div>
+      <div class="for-center">
+        <div class="cards-container">
+          <div class="card1">
+            <h3>Task-Up</h3>
+            <p class="project-tag">DSA</p>
+            <p class="description">
+              The project is a C++ program which is a user centric task
+              scheduler utilizing a priority queue data structure, offering a
+              user defined prioritization criteria providing a customizable and
+              efficient task management
+            </p>
+            <a href="https://github.com/SyedSamrozeAli/Task-Up.git"
+              ><button class="project-button">More info</button></a
+            >
+          </div>
+          <div class="card2">
+            <h3>Gym Managament System</h3>
+            <p class="project-tag">OOP</p>
+            <p class="description">
+              A Gym Management System Project made using Object Oriented
+              Programming Principles (OOP).The system will provide a platform
+              for gym owners to manage their gym clients,trainers,inventory and
+              monetary transactions efficiently.
+            </p>
+            <a
+              href="https://github.com/SyedSamrozeAli/GYM-Managment-System-C-.git"
+              ><button class="project-button">More info</button></a
+            >
+          </div>
+          <div class="card3">
+            <h3>ATM-Machine Simulation</h3>
+            <p class="project-tag">COAL</p>
+            <p class="description">
+              This project involves an Assembly Language-based ATM mechanism,
+              focusing on core banking functions. It aims to provide users with
+              the ability to deposit money, transfer funds, withdraw cash, and
+              pay bills within a secure and efficient virtual ATM environment
+            </p>
+            <a
+              href="https://github.com/SyedSamrozeAli/ATM-Simulation-Assembly-Language-.git"
+              ><button class="project-button">More info</button></a
+            >
+          </div>
+        </div>
+        <a href="https://github.com/SyedSamrozeAli"
+          ><button>For more interesting Projects click here</button></a
+        >
+      </div>
+    </section>
+
+    <section id="contact-me">
+      <h2>CONTACT ME</h2>
+      <a href="./Syed Samroze Ali Resume.pdf" download="SyedSamrozeAli_CV"
+        ><button>
+          Download <span style="font-weight: bold">Resume</span>
+        </button></a
+      >
+      <div class="contact-me-container">
+        <div class="box">
+          <img
+            height="20"
+            src="https://img.icons8.com/ios/50/phone-disconnected.png"
+            alt="phone-disconnected"
+          />
+          <p>03302935308</p>
+        </div>
+        <div class="box">
+          <img
+            height="20"
+            src="https://img.icons8.com/ios/50/gmail--v1.png"
+            alt="gmail--v1"
+          />
+          <p>samroze3@gmail.com</p>
+        </div>
+        <div class="box">
+          <img
+            height="20"
+            src="https://img.icons8.com/ios/50/facebook-new.png"
+            alt="facebook-new"
+          />
+          <a href="https://www.facebook.com/SyedSamrozeAli?mibextid=ZbWKwL"
+            >SyedSamrozeAli</a
+          >
+        </div>
+        <div class="box">
+          <img
+            height="20"
+            src="https://img.icons8.com/ios/50/linkedin.png"
+            alt="linkedin"
+          />
+          <a href="https://www.linkedin.com/in/syed-samroze-ali-4b2184251"
+            >Syed Samroze Ali</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
